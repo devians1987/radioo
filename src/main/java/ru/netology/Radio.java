@@ -1,4 +1,5 @@
 package ru.netology;
+
 public class Radio {
 
     private int currentNumber;
@@ -19,8 +20,8 @@ public class Radio {
     }
 
     public void nextNumber() {
-        if (currentNumber < 9) {
-            currentNumber = currentNumber + 1;
+        if (currentNumber != 9) {
+            currentNumber++;
         } else {
             currentNumber = 0;
         }
@@ -50,8 +51,8 @@ public class Radio {
     }
 
     public void increaseVolume() {
-        if (currentVolume < 100) {
-            currentVolume = currentVolume + 1;
+        if (currentVolume != 100) {
+            currentVolume++;
         }
     }
 
